@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button class="c drum" data-key = "67">c</button>
+    <button class="d drum" data-key = "68">d</button>
+    <button class="e drum" data-key = "69">e</button>
+    <button class="f drum" data-key = "70">f</button>
+    <button class="g drum" data-key = "71">g</button>
+    <button class="a drum" data-key = "65">a</button>
+    <button class="b drum" data-key = "66">b</button>
+  </div>
+<audio data-key = "67" src="./sounds/crash.mp3"></audio>
+<audio data-key = "68" src="./sounds/kick-bass.mp3"></audio>
+<audio data-key = "69" src="./sounds/snare.mp3"></audio>
+<audio data-key = "70" src="./sounds/tom-1.mp3"></audio>
+<audio data-key = "71" src="./sounds/tom-2.mp3"></audio>
+<audio data-key = "65" src="./sounds/tom-3.mp3"></audio>
+<audio data-key = "66"  src="./sounds/tom-4.mp3"></audio>
+
+  <footer>
+   Codemavens.io.
+  </footer>
+  <!-- <script>
+    window.addEventListener("keydown", function(e){
+    let audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`)
+    let set = document.querySelector(`.set[data-key = "${e.keyCode}"]`)
+    if(audio){
+        audio.play()
+        audio.currentTime = 0
+        set.classList.add("pressed")
+    }
+    return
+  })
+    </script> -->
+  <script src="index.js"></script>
+</body>
+
+</html>
